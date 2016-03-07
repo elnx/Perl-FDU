@@ -1,2 +1,3 @@
 # Perl-FDU
-复旦大学Perl语言入门与提高课程2015年秋季所有作业，仅供参考
+All homework of the course "Introduction to Perl Programming" in Fudan University.
+Just provided for reference, don't be lazy and copy them without thinking.
