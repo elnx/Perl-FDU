@@ -1,0 +1,33 @@
+#!/usr/bin/perl -w
+use strict;
+use My_Complex;
+
+my $aa = My_Complex->new(1,2);
+my $bb = My_Complex->new(2,1);
+my $c = $aa->new();
+print "$c\n";
+$c = $aa + $bb;
+print "$c\n";
+$c = $aa + 1;
+print "$c\n";
+$c = $c - $bb;
+print "$c\n";
+$c = ($c + 1) *2;
+print "$c\n";
+print "$c * $bb = ";
+$c = $c * $bb;
+print "$c\n";
+my $m = abs($c);
+print "|$c| = $m";
+print "\n:)" if ($c == $c);
+print "\n:(\n" unless ($c == $bb);
+print "$c / $bb = ";
+$c = $c / $bb;
+print "$c\n";
+$c = $c /2;
+print "$c\n";
+$c = $c->conjugate();
+print "$c\n";
+my @comp_arr = ($aa, $bb, $c);
+print "@comp_arr\n";
+print join(' ', sort {abs($a) <=> abs($b)} @comp_arr), "\n";
